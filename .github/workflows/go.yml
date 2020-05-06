@@ -31,4 +31,5 @@ jobs:
         fi
 
     - name: Build
-      run: ./release/oec-builder/oec-linux/build
+      run: |
+        sh ./release/oec-builder/oec-linux/build
