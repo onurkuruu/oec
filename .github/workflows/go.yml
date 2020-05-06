@@ -31,5 +31,9 @@ jobs:
         fi
 
     - name: Build
+      env:
+        OEC_REPO: $GITHUB_WORKSPACE
+        OUTPUT: $GITHUB_WORKSPACE
+        OEC_VERSION: "1.0.3"
       run: |
         sh ./release/oec-builder/oec-linux/build
